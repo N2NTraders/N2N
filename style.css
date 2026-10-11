@@ -112,7 +112,7 @@ H1, H2, H3, H4, H5, H6 {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background: url('assets/hero-bg.png') center center / cover no-repeat;
+  background: url('assets/hero-bg.jpg') center center / cover no-repeat;
   display: flex;
   align-items: center;
   padding: 0 4%;
@@ -512,7 +512,7 @@ H1, H2, H3, H4, H5, H6 {
     min-height: 100vh;
     padding-top: 6rem;
     align-items: flex-start;
-    background: url('assets/hero-bg-mobile.png') center center / cover no-repeat;
+    background: url('assets/hero-bg-mobile.jpg') center center / cover no-repeat;
   }
 
   .hero-content {
