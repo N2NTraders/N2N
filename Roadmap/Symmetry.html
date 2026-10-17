@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>N2N Trading Strategy - Symmetry</title>
+  <meta name="description" content="Symmetry is a tool used to correctly identify nodes and the size of market moves. The size of a node’s move is called that node’s symmetry, and each node has its own symmetry rule.">
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <!-- ========== HERO ========== -->
+  <header class="content-hero">
+    <nav class="navbar">
+      <a href="https://n2ntraders.github.io/N2N/" class="logo">
+        <img src="../assets/logo.png" alt="N2N">
+      </a>
+
+      <button class="menu-toggle" aria-label="Toggle menu" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="https://n2ntraders.github.io/N2N/">Home</a></li>
+        <li><a href="https://n2ntraders.github.io/N2N/#roadmap">Roadmap</a></li>
+        <li><a href="https://www.youtube.com/@N2NTraders" target="_blank">Youtube</a></li>
+        <li><a href="https://t.me/n2ntrading" target="_blank">Telegram</a></li>
+      </ul>
+    </nav>
+
+    <div class="single-content-title">
+      <img src="../assets/6.png" alt="Symmetry">
+      <h1>Symmetry</h1>
+    </div>
+  </header>
+
+  <!-- ========== Single Content SECTION ========== -->
+ <section class="section-single-content">
+ 
+<p>Symmetry is a tool used to correctly identify nodes and the size of market moves. The size of a node’s move is called that node’s symmetry, and each node has its own symmetry rule. In the ideal case the symmetries of Nodes 1, 2 and 3 are equal, but because of uneven liquidity distribution this rarely happens. A proper understanding of symmetry helps a trader both forecast the approximate size of the next move and check whether the node count is correct. Below we look at the correct way to measure symmetries and the rules that govern them.</p>
+
+<h2>Measuring Symmetries</h2>
+
+<p>As already noted, in the ideal case the symmetries of all nodes are equal. Look at the schematic below:</p>
+<img src="./Symmetry/Equal-Symmetries.png" alt="Equal Symmetries">
+
+
+<p>As the image shows, the three nodes that have formed are all the same size. Their symmetries are measured as follows:</p>
+
+<p><strong>AB = CD = EF</strong></p>
+
+<p>So once Node 1 is complete we can expect the market to move at least the distance from A to B in order to build Node 2. We then expect Node 3 to move the same distance as C to D. In other words, if the move from A to B (Node 1) is 500 points, the move from C to D (Node 2) and from E to F (Node 3) will also be 500 points. This ideal situation usually occurs only when liquidity is injected into the market in a very balanced way, which is rarely seen in financial markets.</p>
+<br>
+
+<p>In the more common case the symmetries of the nodes differ from one another. Several different patterns can appear, but the general rule is as follows:</p>
+
+<ul>
+<li><strong>Node 1 (AB) is smaller than or equal to Node 2 (CD).</strong></li>
+<li><strong>Node 3 (EF) follows no fixed rule; it can be smaller than, equal to, or larger than Node 1 or Node 2.</strong></li>
+</ul>
+<img src="./Symmetry/Unequal-Symmetries.png" alt="Unequal Symmetries">
+
+
+<p>As can be seen in the image above, the three nodes that formed are not equal. Typically the symmetry of Node 1 is small, the symmetry of Node 2 is larger than Node 1, and the symmetry of Node 3 is roughly equal to that of Node 1 or Node 2. This pattern is one of the most common market behaviors; the enlargement of Node 2 allows us to conclude that the bullish or bearish trend is strong. Below we examine all the usual symmetry configurations of the nodes.</p>
+
+<h3>Node 1 equal to Node 2</h3>
+
+<p>When Node 1 and Node 2 are equal, two possibilities can arise:</p>
+
+<ul>
+<li><strong>Node 1 equal to Node 2 – Node 3 smaller than Nodes 1 and 2:</strong></li>
+<p>In this case the market, after two equal nodes, forms a shorter Node 3. This behavior often signals a weakening of trend strength and a possible change of direction.</p>
+<img src="./Symmetry/ABCD-EF.png" alt="Node 1 equal to Node 2 – Node 3 smaller than Nodes 1 and 2">
+<br>
+
+
+<li><strong>Node 1 equal to Node 2 – Node 3 larger than Nodes 1 and 2:</strong></li>
+<p>Here Node 3 appears stronger than the two preceding nodes. This pattern usually occurs when Node 3 has moved in order to resolve a Pending 1-2 on the left side of the market.</p>
+<img src="./Symmetry/ABCD--EF.png" alt="Node 1 equal to Node 2 – Node 3 larger than Nodes 1 and 2">
+<br>
+</ul>
+
+
+<h3>Node 1 smaller than Node 2</h3>
+
+<p>When Node 1 is smaller than Node 2, five possibilities can occur. These are the most common symmetry patterns in the market:</p>
+
+<ul>
+<li><strong>Node 1 smaller than Node 2 – Node 3 smaller than Nodes 1 and 2:</strong></li>
+
+<p>In this case Node 3 is the shortest move of the market and often indicates trend exhaustion and a possible change of direction.</p>
+<img src="./Symmetry/EF-AB-CD.png" alt="Node 1 smaller than Node 2 – Node 3 smaller than Nodes 1 and 2">
+<br>
+
+<li><strong>Node 1 smaller than Node 2 – Node 3 larger than Nodes 1 and 2:</strong></li>
+<p>Here Node 3 is the strongest node and can be a sign that the market trend will continue.</p>
+<img src="./Symmetry/AB-CD--EF.png" alt="Node 1 smaller than Node 2 – Node 3 larger than Nodes 1 and 2">
+<br>
+
+<li><strong>Node 1 smaller than Node 2 – Node 3 larger than Node 1 and smaller than Node 2:</strong></li>
+<p>This configuration shows a relative balance and is one of the market’s more balanced patterns.</p>
+<img src="./Symmetry/AB-EF-CD.png" alt="Node 1 smaller than Node 2 – Node 3 larger than Node 1 and smaller than Node 2">
+<br>
+
+<li><strong>Node 1 smaller than Node 2 – Node 3 larger than Node 1 and equal to Node 2:</strong></li>
+<p>In this case Node 3 is roughly the same size as Node 2 and is often an important candidate for a market correction.</p>
+<img src="./Symmetry/AB-CDEF.png" alt="Node 1 smaller than Node 2 – Node 3 larger than Node 1 and equal to Node 2">
+<br>
+
+<li><strong>Node 1 smaller than Node 2 – Node 1 equal to Node 3:</strong></li>
+<p>Here Node 3 is roughly the same size as Node 1; this configuration is also an important candidate for a market correction.</p>
+<img src="./Symmetry/ABEF-CD.png" alt="Node 1 smaller than Node 2 – Node 1 equal to Node 3">
+<br>
+
+</ul>
+
+
+<h2>Additional Symmetry Notes</h2>
+
+<p>According to the fractal rules, symmetries are not limited to any particular time frame and follow the same laws on every time frame. Consequently the symmetries of the internal nodes must also obey the symmetry rules correctly. As can be seen in the shematic below, the internal nodes of the main Node 2 also follow the symmetry rules. This demonstrates the importance of the market’s fractal nature.</p>
+<img src="./Symmetry/Fractal-Symmetry.png" alt="Fractal Symmetry">
+<br>
+<br>
+
+
+<p>If the symmetry of Node 3 is much larger than that of Node 1 and Node 2, the node count is probably wrong or the market is still inside its trend and the nodes are not yet complete. The example below shows this situation. In the left-hand schematic the market appears to have completed three nodes, yet because Node 3 has grown excessively we can conclude that the market may turn into the right-hand schematic. In essence, Node 2 of the left-hand schematic was only the internal Node 1 of the main Node 2, and the enlargement of Node 3 on the left is justified as the formation of the internal Node 2 of the main Node 2.</p>
+<img src="./Symmetry/Huge-Node-3.png" alt="Huge Node 3 Symmetry">
+<br>
+<br>
+
+<p>If the instrument is a trending market such as indices, precious commodities, cryptocurrencies or even stocks, higher time frames such as daily, weekly and monthly must be measured on a logarithmic scale so that the symmetries are accurate. The difference between logarithmic and normal scaling can be seen in the images below on the Bitcoin daily chart.</p>
+<img src="./Symmetry/Logarithmic-Scale-Chart-Symmetry.png" alt="Logarithmic Scale Chart">
+<img src="./Symmetry/Normal-Scale-Chart-Symmetry.png" alt="Normal Scale Chart">
+
+<p>For range-bound instruments such as forex or any other market that moves inside a particular price range, the normal scale must be used. Choosing the correct scale is one of the key points for accurate symmetry measurement; ignoring it can lead to errors in measuring the nodes.</p>
+<br>
+
+<h2>Time Symmetry</h2>
+
+<p>Time Symmetry is usually used to calculate the length of the period required to complete cycles. Once a cycle is finished, the time it took can serve as a rough basis for the time needed to complete the next cycle. In the schematic below it can be seen that the first cycle completed after 15160 candles and the following cycle took roughly the same amount of time to finish.</p>
+<img src="./Symmetry/Time-Symmetry.png" alt="Time Symmetry">
+
+
+<p>Note that because of the uneven distribution of liquidity in the market, Time Symmetry can be violated; only node symmetries are never violated. Time Symmetry therefore has mainly a supportive and approximate role and should not be used on its own as the basis for decisions.</p>
+
+<h2>Internodal Symmetry</h2>
+
+<p>Internodal Symmetry refers to the symmetry between the turning points of each node; this type of symmetry is most often seen in Node 2. As the schematic below shows, Internodal Symmetry on the left side is taken from the Retrace high of Node 2 to its Spike high and indicates the probable high of Node 3. In the correction on the right side of the market, Internodal Symmetry is taken from the Retrace low to the Flush low of the left-side Node 2 and indicates the probable low of the corrective Node 1 or 2 of the decline.</p>
+<img src="./Symmetry/Internodal-Symmetry.png" alt="Internodal Symmetry">
+
+
+<p>Note that, like Time Symmetry, Internodal Symmetry can also be violated because of uneven liquidity distribution; this type of symmetry likewise has only a supportive and approximate role and should not be used alone as the basis for decisions.</p>
+
+<h2>Internodal Symmetry in a 1-2-3 Spike</h2>
+
+<p>Node 3s that form as a 1-2-3 spike at the end of trends usually respect Internodal Symmetry. This pattern is very common at the end of strong trends and can be a sign that the market move is finishing and a correction or change of direction is beginning.</p>
+<img src="./Symmetry/Node-C-Symmetry.png" alt="Internodal Symmetry in a 1-2-3 Spike">
+<br>
+<br>
+
+<p>Overall, symmetry is one of the powerful tools of the N2N strategy that, together with nodes, cycles, sequence and fractals, gives the trader a more complete picture of market behavior. Correct measurement of symmetries, choice of the appropriate scale, and attention to the different types of symmetry can noticeably increase analytical precision and lead to more rational decisions.</p>
+
+
+<div class="content-footer">
+<a href="https://n2ntraders.github.io/N2N/Roadmap/Fractal" class="prev-next-btn"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/>
+</svg>Fractal</a>
+
+<a href="https://n2ntraders.github.io/N2N/Roadmap/Full-Analyze" class="prev-next-btn">Full Analyze<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+</svg></a>
+</div>
+
+</section>
+
+<button id="backToTop" class="back-to-top" title="Back to top">↑</button>
+
+  <!-- ========== Footer SECTION ========== -->
+
+<footer class="footer-section">
+  
+  <p>All the materials provided on this website are completely free. You are welcome to use, copy, and share them without any restrictions. If you found this content useful and would like to support our work, you can make a voluntary donation to any of the wallet addresses below. Your support helps us continue creating and sharing free educational resources.</p>
+
+  <div class="wallets">
+    <div class="wallet-item">
+      <strong>BTC:</strong>
+      <div class="wallet-row">
+        <code id="btc-address">bc1qym9lejsaknw9axe5nx6s7mtfkjrgjhks4mguan</code>
+        <button class="copy-btn" onclick="copyAddress('btc-address', this)">Copy</button>
+      </div>
+    </div>
+
+    <div class="wallet-item">
+      <strong>ETH Chain:</strong>
+      <div class="wallet-row">
+        <code id="eth-address">0xcF54827cC168527Cc98213b9511252F936219002</code>
+        <button class="copy-btn" onclick="copyAddress('eth-address', this)">Copy</button>
+      </div>
+    </div>
+
+    <div class="wallet-item">
+      <strong>BNB Chain:</strong>
+      <div class="wallet-row">
+        <code id="bnb-address">TXYZopYRdj2D9XRtbG411XZZ3kM5VkAeBf</code>
+        <button class="copy-btn" onclick="copyAddress('bnb-address', this)">Copy</button>
+      </div>
+    </div>
+
+        <div class="wallet-item">
+      <strong>Solana Chain:</strong>
+      <div class="wallet-row">
+        <code id="sol-address">2UZGJaLvzGqgQ6TpHt2W93yEPzbhaiXhUDxL11PK47bP</code>
+        <button class="copy-btn" onclick="copyAddress('sol-address', this)">Copy</button>
+      </div>
+    </div>
+        <div class="wallet-item">
+      <strong>Polygon Chain:</strong>
+      <div class="wallet-row">
+        <code id="polygon-address">0xcF54827cC168527Cc98213b9511252F936219002</code>
+        <button class="copy-btn" onclick="copyAddress('polygon-address', this)">Copy</button>
+      </div>
+    </div>
+
+        <div class="wallet-item">
+      <strong>Tron Chain:</strong>
+      <div class="wallet-row">
+        <code id="tron-address">THVxcnnbtUfg76VfLZkXHNaoGHwgm3LPsx</code>
+        <button class="copy-btn" onclick="copyAddress('tron-address', this)">Copy</button>
+      </div>
+    </div>
+    <div class="wallet-item">
+      <strong>Arbitrum Chain:</strong>
+      <div class="wallet-row">
+        <code id="arbitrum-address">0xcF54827cC168527Cc98213b9511252F936219002</code>
+        <button class="copy-btn" onclick="copyAddress('arbitrum-address', this)">Copy</button>
+      </div>
+    </div>
+        <div class="wallet-item">
+      <strong>Base Chain:</strong>
+      <div class="wallet-row">
+        <code id="base-address">0xcF54827cC168527Cc98213b9511252F936219002</code>
+        <button class="copy-btn" onclick="copyAddress('base-address', this)">Copy</button>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+  <script src="../script.js"></script>
+</body>
+</html>
