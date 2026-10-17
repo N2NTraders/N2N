@@ -855,6 +855,11 @@ H1, H2, H3, H4, H5, H6 {
   padding: 1rem 1.5rem;
 }
 
+.content-footer {
+  max-width: 300px;
+  gap: 1rem ;
+}
+
 
 .chart-examples {
   max-width: 100%;
