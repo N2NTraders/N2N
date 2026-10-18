@@ -470,8 +470,7 @@ H1, H2, H3, H4, H5, H6 {
   max-width: 1200px;
   background: var(--bg-dark);
   position: relative;
-  display: flex;
-  flex-direction: column;
+  display: block;
   margin: 0 auto;
   padding: 1rem 6rem;
 }
@@ -527,7 +526,7 @@ H1, H2, H3, H4, H5, H6 {
 /* Lightbox Section */
 
 .chart-examples {
-  max-width: 900px;
+  max-width: 500px;
   max-height: 300px;
   background: var(--btn-blue-hover);
   display: flex;
